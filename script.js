@@ -47,12 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll);
 
 
-  const sections = document.querySelectorAll('section[id]');
+  // Sections that drive the active nav link. A section can borrow another
+  // link via data-nav (e.g. the "visit" block counts as Gallery).
+  const sections = document.querySelectorAll('section[id], footer[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
   const highlightNav = () => {
 
-    let current = sections[0].id;
+    let current = sections[0].dataset.nav || sections[0].id;
 
     const offset = 140;
 
@@ -61,11 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const top = section.offsetTop - offset;
 
       if (window.scrollY >= top) {
-        current = section.id;
+        current = section.dataset.nav || section.id;
       }
 
     });
 
+    // at the very bottom of the page, the footer (Contact) is active
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+      current = 'contact';
+    }
 
     navLinks.forEach(link => {
 
@@ -78,9 +84,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   };
 
-  window.addEventListener('scroll', highlightNav);
+  window.addEventListener('scroll', highlightNav, { passive: true });
+  window.addEventListener('resize', highlightNav);
 
   highlightNav();
+
+  // close the mobile menu if the screen grows to desktop size
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) {
+      mainNav.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
 
 
   backToTop.addEventListener('click', () => {
