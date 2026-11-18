@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const foodItems = {
     'espresso': {
       name: 'Espresso',
-      image: 'images/espresso.jpg',
+      image: 'espresso.jpg',
       emoji: '☕',
       desc: 'A bold, concentrated shot with a rich golden crema, pulled from freshly ground single-origin beans.',
       note: 'Single shot · Hot',
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'cappuccino': {
       name: 'Cappuccino',
-      image: 'images/cappuccino.jpg',
+      image: 'cappuccino.jpg',
       emoji: '☕',
       desc: 'Espresso topped with silky steamed milk and a thick layer of velvety foam, dusted with cocoa.',
       note: 'Regular · Hot',
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'cafe-latte': {
       name: 'Café Latte',
-      image: 'images/cafe-latte.jpg',
+      image: 'cafe-latte.jpg',
       emoji: '☕',
       desc: 'Smooth espresso blended with steamed milk and finished with delicate latte art.',
       note: 'Regular · Hot',
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'iced-latte': {
       name: 'Iced Latte',
-      image: 'images/iced-latte.jpg',
+      image: 'iced-latte.jpg',
       emoji: '🧊',
       desc: 'Bold espresso poured over cold milk and ice, lightly sweetened and swirled to order.',
       note: 'Regular · Cold',
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'cold-coffee': {
       name: 'Cold Coffee',
-      image: 'images/cold-coffee.jpg',
+      image: 'cold-coffee.jpg',
       emoji: '🥤',
       desc: 'Creamy, chilled coffee shaken with milk and ice for a refreshing pick-me-up.',
       note: 'Regular · Cold',
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'masala-chai': {
       name: 'Masala Chai',
-      image: 'images/masala-chai.jpg',
+      image: 'masala-chai.jpg',
       emoji: '🫖',
       desc: 'Our classic kadak chai simmered with ginger, cardamom and warming spices, served in a kulhad-style cup.',
       note: 'Regular · Hot',
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'lemon-iced-tea': {
       name: 'Lemon Iced Tea',
-      image: 'images/lemon-iced-tea.jpg',
+      image: 'lemon-iced-tea.jpg',
       emoji: '🍋',
       desc: 'Chilled black tea with fresh lemon slices and mint, perfect for a hot afternoon.',
       note: 'Tall glass · Cold',
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'chocolate-cake': {
       name: 'Chocolate Cake',
-      image: 'images/chocolate-cake.jpg',
+      image: 'chocolate-cake.jpg',
       emoji: '🍫',
       desc: 'Rich, dark cocoa layers with a glossy chocolate ganache and a drizzle of warm sauce.',
       note: '1 slice',
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'red-velvet-cake': {
       name: 'Red Velvet Cake',
-      image: 'images/red-velvet-cake.jpg',
+      image: 'red-velvet-cake.jpg',
       emoji: '❤️',
       desc: 'Soft crimson sponge layered with smooth cream cheese frosting.',
       note: '1 slice',
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'cheesecake': {
       name: 'Cheesecake',
-      image: 'images/cheesecake.jpg',
+      image: 'cheesecake.jpg',
       emoji: '🍰',
       desc: 'Creamy baked cheesecake on a buttery biscuit base, served with fresh berries.',
       note: '1 slice',
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'black-forest': {
       name: 'Black Forest',
-      image: 'images/black-forest.jpg',
+      image: 'black-forest.jpg',
       emoji: '🍒',
       desc: 'Chocolate sponge, whipped cream and dark chocolate shavings, topped with a cherry.',
       note: '1 slice',
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'butter-croissant': {
       name: 'Butter Croissant',
-      image: 'images/butter-croissant.jpg',
+      image: 'butter-croissant.jpg',
       emoji: '🥐',
       desc: 'Flaky, golden layers baked fresh every morning, with a rich buttery centre.',
       note: '1 piece',
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'blueberry-muffin': {
       name: 'Blueberry Muffin',
-      image: 'images/blueberry-muffin.jpg',
+      image: 'blueberry-muffin.jpg',
       emoji: '🫐',
       desc: 'A soft, fluffy muffin bursting with juicy blueberries and a golden crown.',
       note: '1 piece',
@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'fudgy-brownie': {
       name: 'Fudgy Brownie',
-      image: 'images/fudgy-brownie.jpg',
+      image: 'fudgy-brownie.jpg',
       emoji: '🍫',
       desc: 'Gooey, fudgy brownie served warm with a scoop of vanilla ice cream and chocolate sauce.',
       note: '1 piece',
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'veg-sandwich': {
       name: 'Veg Sandwich',
-      image: 'images/veg-sandwich.jpg',
+      image: 'veg-sandwich.jpg',
       emoji: '🥪',
       desc: 'Toasted multigrain bread stuffed with sautéed capsicum, onion, carrot and melted cheese. Served with ketchup.',
       note: '2 triangles',
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'grilled-cheese-sandwich': {
       name: 'Grilled Cheese Sandwich',
-      image: 'images/grilled-cheese-sandwich.jpg',
+      image: 'grilled-cheese-sandwich.jpg',
       emoji: '🧀',
       desc: 'Golden, buttery toast with a gooey cheese pull, finished with fresh herbs.',
       note: '2 triangles',
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'choco-chip-cookies': {
       name: 'Choco Chip Cookies',
-      image: 'images/choco-chip-cookies.jpg',
+      image: 'choco-chip-cookies.jpg',
       emoji: '🍪',
       desc: 'Soft-centred, crisp-edged cookies loaded with dark chocolate chips, baked fresh daily.',
       note: 'Pack of 3',
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'garlic-bread': {
       name: 'Garlic Bread',
-      image: 'images/garlic-bread.jpg',
+      image: 'garlic-bread.jpg',
       emoji: '🥖',
       desc: 'Crusty slices brushed with garlic butter, sprinkled with parmesan and parsley, and toasted till golden.',
       note: '4 slices',
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'veg-burger': {
       name: 'Veg Burger',
-      image: 'images/veg-burger.jpg',
+      image: 'veg-burger.jpg',
       emoji: '🍔',
       desc: 'A hearty veggie patty with melted cheese, lettuce, tomato, onion and avocado in a toasted multigrain bun.',
       note: '1 burger',
